@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Use of lists, tables, media and forms">
+        <meta name = "keywords" content = "lists, tables, forms">
+        <title>Week 2 assignment</title>
+    </head>
+    <body>
+        <h1>WEEK 2 ASSIGNMENT</h1>
+        <section id = "lists">
+            <h2>Lists</h2>
+            <p>The following are the main types of lists in HTML5</p>
+            <h3>Ordered lists</h3>
+            <p>The following are the countries hosting the CHAN 2024.</p>
+            <ol>
+                <li>Kenya</li>
+                <li>Uganda</li>
+                <li>Tanzania</li>
+            </ol>
+            <h3>Unordered Lists</h3>
+            <p>The following are cities in Kenya.</p>
+            <ul>
+                <li>Nairobi</li>
+                <li>Kisumu</li>
+                <li>Mombasa</li>
+                <li>Nakuru</li>
+                <li>Eldoret</li>
+            </ul>
+            <h3>Definition Lists</h3>
+            <p>These are full forms of some common computing terms</p>
+            <dl>
+                <dt>PDF</dt>
+                <dd>Portable Document Format</dd>
+                <dt>CMOS</dt>
+                <dd>Complementary Metal Oxide Semiconductor</dd>
+                <dt>Wi-Fi</dt>
+                <dd>Wireless Fidelity</dd>
+            </dl>
+            <h3>Nested Lists</h3>
+            <p>Some countries, counties and major towns</p>
+            <ol type = "A">
+                <li>Kenya
+                    <ol>
+                        <li>Nairobi
+                            <ul>
+                                <li>Kasarani</li>
+                                <li>Roysambu</li>
+                                <li>Karen</li>
+                                <li>Ngong</li>
+                            </ul>
+                        </li>
+                        <li>Mombasa
+                            <ul>
+                                <li>Nyali</li>
+                                <li>Bamburi</li>
+                                <li>Shanzu</li>
+                            </ul>
+                        </li>
+                        <li>Kakamega
+                            <ul>
+                                <li>Mumias</li>
+                                <li>Khayega</li>
+                                <li>Kabras</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>Tanzania
+                    <ol>
+                        <li>Arusha
+                            <ul>
+                                <li>Loliondo</li>
+                                <li>Namanga</li>
+                                <li>Sekei</li>
+                            </ul>
+                        </li>
+                        <li>Dodoma
+                            <ul>
+                                <li>Chemba</li>
+                                <li>Chamwino</li>
+                                <li>Kongwa</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section id = "tables">
+            <h2>Tables</h2>
+            <p>Formula One drivers and their teams.</p>
+            <table border = 2>
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Driver</th>
+                        <th>Team</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16</td>
+                        <td>Charles Leclerc</td>
+                        <td>Scuderia Ferrari</td>
+                    </tr>
+                    <tr>
+                        <td>63</td>
+                        <td>George Russell</td>
+                        <td>Mercedes Petronas</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>Lewis Hamilton </td>
+                        <td>Scuderia Ferrari</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Max Verstappen</td>
+                        <td>Oracle Redbull Racing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id = "media">
+            <h2>Media</h2>
+            <h3>Images</h3>
+            <img src = "https://images.pexels.com/photos/29252114/pexels-photo-29252114.jpeg" alt = "Redbull formula one car" height = "300px" width = "300px">
+            <img src = "https://images.pexels.com/photos/29276537/pexels-photo-29276537.jpeg" alt = "Ferrari formula one car" height = "300px" width = "300px">
+            <h3>Audio</h3>
+            <audio controls>
+                <source src  = "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type = "audio/mpeg"/>
+                Your browser does not support audio playback.
+            </audio>
+            <h3>Video</h3>
+            <video height = "300px" width = "400px" controls>
+                <source src = "https://videos.pexels.com/video-files/32990712/14060992_2560_1440_30fps.mp4" type = "video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </section>
+        <section id = "Forms">
+            <h2>Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for ="First_name">First name:</label>
+                    <input type = "text" placeholder = "Enter your First Name here." id = "First_name" name = "First_name" required autocomplete = "on">
+                    <br><br>
+                    <label for ="Last_name">Last name:</label>
+                    <input type = "text" placeholder = "Enter your Last Name here." id = "Last_name" name = "Last_name" required autocomplete = "on">
+                    <br><br>
+                    <label for = "Gender">Gender: </label>
+                    <input type = "radio" value = "Male" id = "Male" name = "Gender">Male
+                    <input type = "radio" value = "Female" id = "Female" name = "Gender">Female
+                    <br><br>
+                    <label for = "Password">Password: </label>
+                    <input type = "password" id = "Password" name = "Password" required minlength = "8" maxlength = "20" autocomplete = "on">
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for ="Phone-number">Phone number:</label>
+                    <input type = "tel" placeholder = "Enter only ten digits" name = "Phone-number" required pattern = "[0-9]{10}">
+                    <br><br>
+                    <label for = "email">Email:</label>
+                    <input type = "email" placeholder = "Enter a valid email address." name = "email" required>
+                    <br><br>
+                    <label for = "country">Country</label>
+                    <input type = "text" id = "country" name = "country" value = "Kenya" readonly>
+                    <label for = "city">City:</label>
+                    <select id = "city" name = "city">
+                        <option value  = "">--Select city near you.--</option>
+                        <option value = "Nairobi">Nairobi</option>
+                        <option value = "Mombasa">Mombasa</option>
+                        <option value = "Kisumu">Kisumu</option>
+                        <option value = "Eldoret">Eldoret</option>
+                        <option value = "Nakuru">Nakuru</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for = "Recommendations">Recommendations:</label>
+                    <textarea id = "Recommendations" name = "Recommendations" rows = 5 cols = 50></textarea>
+                    <br><br>
+                    <input type = "Submit" id = "Submit">
+                    <br><br>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
